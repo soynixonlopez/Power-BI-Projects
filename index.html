@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nixon López - Portafolio Power BI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="matrix-bg"></div>
+    
+    <!-- Floating Tech Icons -->
+    <div class="floating-icons">
+        <!-- Power BI Icon -->
+        <div class="floating-icon powerbi-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="8" fill="#F2C811"/>
+                <path d="M12 12h16v16H12z" fill="#F2C811"/>
+                <path d="M16 16h8v8h-8z" fill="#000"/>
+                <path d="M18 18h4v4h-4z" fill="#F2C811"/>
+                <path d="M20 20h2v2h-2z" fill="#000"/>
+            </svg>
+        </div>
+        <!-- Excel Icon -->
+        <div class="floating-icon excel-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="6" fill="#217346"/>
+                <path d="M12 12h16v16H12z" fill="#217346"/>
+                <path d="M16 16h8v8h-8z" fill="#fff"/>
+                <path d="M18 18h4v4h-4z" fill="#217346"/>
+                <path d="M20 20h2v2h-2z" fill="#fff"/>
+            </svg>
+        </div>
+        <!-- OneDrive Icon -->
+        <div class="floating-icon onedrive-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="8" fill="#0078D4"/>
+                <path d="M12 12h16v16H12z" fill="#0078D4"/>
+                <path d="M16 16h8v8h-8z" fill="#fff"/>
+                <path d="M18 18h4v4h-4z" fill="#0078D4"/>
+                <path d="M20 20h2v2h-2z" fill="#fff"/>
+            </svg>
+        </div>
+        <!-- Data Analytics Icon -->
+        <div class="floating-icon analytics-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="8" fill="#00D4FF"/>
+                <path d="M12 12h16v16H12z" fill="#00D4FF"/>
+                <path d="M16 16h8v8h-8z" fill="#fff"/>
+                <path d="M18 18h4v4h-4z" fill="#00D4FF"/>
+                <path d="M20 20h2v2h-2z" fill="#fff"/>
+            </svg>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="title-container">
+                    <div class="title-line-container">
+                        <h1 class="main-title">
+                            <span class="title-line" id="title-line-1">Hola, Soy Nixon López</span>
+                        </h1>
+                    </div>
+                    <div class="title-line-container">
+                        <h2 class="subtitle" id="title-line-2">IT Teacher</h2>
+                    </div>
+                </div>
+                <p class="welcome-text" id="welcome-text">Bienvenidos a mi portafolio de dashboards con Power BI</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboards Gallery -->
+    <section id="dashboards" class="dashboards-section">
+        <div class="section-transition">
+            <div class="transition-line"></div>
+        </div>
+        <div class="gallery-container">
+            <!-- Dashboard 1 - Super Fresco -->
+            <div class="gallery-item featured" onclick="openDashboard('dashboard1')">
+                <div class="item-content">
+                    <div class="item-header">
+                        <div class="item-badge">LIVE</div>
+                        <div class="item-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                    </div>
+                    <h3 class="item-title">Super Fresco</h3>
+                    <p class="item-description">Proyecto realizado para el Diplomado en Power BI de UDB Virtual</p>
+                    <div class="item-overlay">
+                        <div class="overlay-content">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Abrir Proyecto</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-background">
+                    <div class="bg-pattern"></div>
+                </div>
+            </div>
+
+            <!-- Dashboard 2 - Nixon Tours -->
+            <div class="gallery-item development" onclick="openDashboard('dashboard2')">
+                <div class="item-content">
+                    <div class="item-header">
+                        <div class="item-badge dev">DEV</div>
+                        <div class="item-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                    <h3 class="item-title">Nixon Tours</h3>
+                    <p class="item-description">Análisis de ventas y análisis financiero de agencia de turismo a Islas de Guna Yala</p>
+                    <div class="item-overlay">
+                        <div class="overlay-content">
+                            <i class="fas fa-clock"></i>
+                            <span>En Desarrollo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-background">
+                    <div class="bg-pattern"></div>
+                </div>
+            </div>
+
+            <!-- Dashboard 3 - Sistema de Calificaciones -->
+            <div class="gallery-item development" onclick="openDashboard('dashboard3')">
+                <div class="item-content">
+                    <div class="item-header">
+                        <div class="item-badge dev">DEV</div>
+                        <div class="item-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <h3 class="item-title">Sistema de Calificaciones</h3>
+                    <p class="item-description">Análisis de avances de proyecto de código que contiene métricas de avances de estudiantes y sus calificaciones</p>
+                    <div class="item-overlay">
+                        <div class="overlay-content">
+                            <i class="fas fa-clock"></i>
+                            <span>En Desarrollo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-background">
+                    <div class="bg-pattern"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-transition">
+            <div class="transition-line"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-content">
+                <h2 class="contact-title">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span class="title-text">Contacto</span>
+                </h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>soynixonlopez@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/nixonlopez</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/soynixonlopez</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <span>Portafolio diseñado con</span>
+                <i class="fas fa-heart"></i>
+                <span>por</span>
+                <span class="author">soynixonlopez</span>
+            </div>
+            <div class="footer-code">
+                <span class="code-comment">// Powered by Data & Analytics</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
